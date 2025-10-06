@@ -1,0 +1,13 @@
+package es.cheste.ClinicaDental.enums;
+
+public enum Especialidad {
+    DONTOLOGIA_GENERAL,
+    ODONTOPEDIATRIA,
+    ENDODONCIA,
+    ORTODONCIA,
+    PROSTODONCIA,
+    PERIODONCIA,
+    CIRUGIA_MAXILOFACIAL,
+    RADIOLOGIA_MAXILOFACIAL
+}
+

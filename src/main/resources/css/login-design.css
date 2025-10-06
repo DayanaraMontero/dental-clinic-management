@@ -1,0 +1,146 @@
+.white-bg {
+    -fx-background-color: #fff;
+}
+
+.fondo {
+    -fx-background-color: linear-gradient(to bottom left, #1E3A8A, #A7C7E7);
+}
+
+/* Campos de texto con bordes en azul cielo pastel */
+.text-field {
+    -fx-border-color: #A7C7E7; /* Azul cielo pastel */
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1B4965; /* Azul oscuro para mejor legibilidad */
+}
+
+/* Efecto de enfoque en el campo de texto */
+.text-field:focused {
+    -fx-border-color: #1B4965; /* Azul oscuro */
+    -fx-effect: dropshadow(gaussian, rgba(27, 73, 101, 0.3), 10, 0, 0, 2);
+}
+
+.btn {
+    -fx-background-color: #A7C7E7; /* Azul pastel */
+    -fx-background-radius: 8px;
+    -fx-text-fill: #1B4965; /* Azul oscuro para mejor contraste */
+    -fx-font-size: 13px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 8px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 2, 2);
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}
+
+/* Efecto hover */
+.btn:hover {
+    -fx-background-color: #6FA3C1; /* Azul medio al pasar el cursor */
+    -fx-text-fill: #FFFFFF; /* Blanco para más contraste */
+}
+
+.btn:pressed {
+    -fx-background-color: #6FA3C1;
+    -fx-background-radius: 20px;
+}
+
+.btn-dentista {
+    -fx-background-color: #B8E0D2; /* Verde agua pastel */
+    -fx-background-radius: 8px;
+    -fx-text-fill: #1B4965; /* Azul oscuro */
+    -fx-font-size: 13px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 8px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 2, 2);
+    -fx-cursor: hand; /* Hace que el cursor cambie al pasar sobre el botón */
+    -fx-alignment: CENTER;
+}
+
+/* Efecto hover */
+.btn-dentista:hover {
+    -fx-background-color: #82C09A; /* Verde menta más intenso */
+    -fx-text-fill: #FFFFFF; /* Texto blanco para contraste */
+}
+
+.btn-dentista:pressed {
+    -fx-background-color: #82C09A;
+    -fx-background-radius: 20px;
+}
+
+.btn-paciente {
+    -fx-background-color: #D9C9E2; /* Verde agua pastel */
+    -fx-background-radius: 8px;
+    -fx-text-fill: #5A4F7A; /* Azul oscuro */
+    -fx-font-size: 13px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 8px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 2, 2);
+    -fx-cursor: hand; /* Hace que el cursor cambie al pasar sobre el botón */
+    -fx-alignment: CENTER;
+}
+
+/* Efecto hover */
+.btn-paciente:hover {
+    -fx-background-color: #A88DC6; /* Verde menta más intenso */
+    -fx-text-fill: #FFFFFF; /* Texto blanco para contraste */
+}
+
+.btn-paciente:pressed {
+    -fx-background-color: #A88DC6;
+    -fx-background-radius: 20px;
+}
+
+.btn-registro:hover {
+    -fx-text-fill: #5A4F7A;
+    -fx-underline: true;
+}
+
+/* Cambia el borde del botón */
+.checkRemember .box {
+    -fx-background-color: white;
+    -fx-border-color: #6FA3C1; /* Color del borde */
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+}
+
+/* Cambia el fondo cuando está seleccionado */
+.checkRemember:selected .box {
+    -fx-background-color: #1B4965; /* Color de fondo al estar marcado */
+}
+
+/* Cambia el color del tic al estar seleccionado */
+.checkRemember:selected .mark {
+    -fx-background-color: white;
+}
+
+.combo-box {
+    -fx-background-color: #A7C7E7;
+    -fx-border-color: #6FA3C1;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 16px;
+    -fx-text-fill: #1B4965;
+    -fx-font-family: "Times New Roman";
+}
+
+/* Estilo cuando el ComboBox está abierto */
+.combo-box .list-cell {
+    -fx-background-color: #A7C7E7; /* Verde agua pastel */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #6FA3C1; /* Verde más fuerte */
+    -fx-text-fill: #fff;
+}
+
+/* Flecha del ComboBox */
+.combo-box .arrow {
+    -fx-background-color: #1B4965; /* Azul oscuro */
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1570.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.cheste.ClinicaDental.controladores_fx.FacturaControllerFX">
+    <children>
+        <AnchorPane layoutX="193.0" layoutY="138.0" prefHeight="1080.0" prefWidth="1570.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane layoutX="17.0" layoutY="14.0" prefHeight="700.0" prefWidth="1536.0" stylesheets="@../css/admin-panel.css" AnchorPane.bottomAnchor="366.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0">
+                    <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="radio" />
+                        <String fx:value="shadow" />
+                    </styleClass>
+                    <children>
+                        <TextField focusTraversable="false" layoutX="40.0" layoutY="22.0" prefHeight="33.0" prefWidth="220.0" promptText="Buscar" stylesheets="@../css/general-panel.css" />
+                        <FontAwesomeIconView fill="#1b4965" glyphName="SEARCH" layoutX="16.0" layoutY="45.0" size="18" />
+                        <Label layoutX="768.0" layoutY="30.0" text="TOTAL REGISTROS:" AnchorPane.leftAnchor="768.0">
+                            <font>
+                                <Font name="Times New Roman Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lblTotal" layoutX="935.0" layoutY="27.0" textFill="#20ff00">
+                            <font>
+                                <Font name="Times New Roman Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <TableView fx:id="tableFacturas" focusTraversable="false" layoutX="16.0" layoutY="71.0" prefHeight="615.0" prefWidth="1504.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="71.0">
+                            <columns>
+                                <TableColumn fx:id="colFacturaId" prefWidth="68.0" text="ID" />
+                                <TableColumn fx:id="colFacturaIdPaciente" prefWidth="256.0" text="Paciente" />
+                                <TableColumn fx:id="colFacturaIdTratamiento" prefWidth="238.0" text="Tratamiento" />
+                                <TableColumn fx:id="colFacturaTotal" prefWidth="137.0" text="Total" />
+                                <TableColumn fx:id="colFacturaFecha" prefWidth="202.0" text="Fecha" />
+                                <TableColumn fx:id="colFacturaEstado" minWidth="0.0" prefWidth="127.0" text="Estado" />
+                                <TableColumn fx:id="colFacturaMetodoPago" prefWidth="172.0" text="Metodo Pago" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="17.0" layoutY="734.0" prefHeight="332.0" prefWidth="1536.0" stylesheets="@../css/general-panel.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="17.0">
+                    <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="radio" />
+                        <String fx:value="shadow" />
+                    </styleClass>
+                    <children>
+                  <Button fx:id="btnAgregarFactura" layoutX="685.0" layoutY="259.0" mnemonicParsing="false" onAction="#agregarFactura" prefHeight="30.0" prefWidth="100.0" styleClass="btn-accion" text="AGREGAR" />
+                  <Button fx:id="btnEditarFactura" layoutX="801.0" layoutY="259.0" mnemonicParsing="false" onAction="#editarFactura" prefHeight="30.0" prefWidth="100.0" styleClass="btn-accion" text="EDITAR" />
+                  <Button fx:id="btnEliminarFactura" layoutX="918.0" layoutY="259.0" mnemonicParsing="false" onAction="#eliminarFactura" prefHeight="30.0" prefWidth="100.0" styleClass="btn-accion" text="ELIMINAR" />
+                  <Button fx:id="btnLimpiarFactura" layoutX="1032.0" layoutY="259.0" mnemonicParsing="false" onAction="#limpiar" prefHeight="30.0" prefWidth="100.0" styleClass="btn-accion" text="LIMPIAR" />
+                  <DatePicker fx:id="dpFacturaFecha" focusTraversable="false" layoutX="784.0" layoutY="129.0" prefHeight="27.0" prefWidth="250.0" promptText="Fecha" />
+                  <TextField fx:id="txtFacturaId" editable="false" focusTraversable="false" layoutX="450.0" layoutY="71.0" prefHeight="33.0" prefWidth="60.0" promptText="1" />
+                  <TextField fx:id="txtfacturaTotal" focusTraversable="false" layoutX="784.0" layoutY="70.0" prefHeight="33.0" prefWidth="248.0" promptText="Total" />
+                  <ComboBox fx:id="cmbFacturaEstado" focusTraversable="false" layoutX="784.0" layoutY="183.0" prefHeight="27.0" prefWidth="250.0" promptText="Selecciona un Estado" />
+                  <FontAwesomeIconView glyphName="ID_CARD" layoutX="402.0" layoutY="95.0" size="22" styleClass="font-icon" />
+                  <FontAwesomeIconView glyphName="USER" layoutX="402.0" layoutY="152.0" size="25" styleClass="font-icon" />
+                  <FontAwesomeIconView glyphName="CLIPBOARD" layoutX="400.0" layoutY="205.0" size="23" styleClass="font-icon" />
+                  <FontAwesomeIconView glyphName="CREDIT_CARD" layoutX="740.0" layoutY="94.0" size="22" styleClass="font-icon" />
+                  <FontAwesomeIconView glyphName="CALENDAR" layoutX="740.0" layoutY="153.0" size="24" styleClass="font-icon" />
+                  <FontAwesomeIconView glyphName="LIST_ALT" layoutX="740.0" layoutY="206.0" size="23" styleClass="font-icon" />
+                  <FontAwesomeIconView glyphName="PAYPAL" layoutX="1120.0" layoutY="154.0" size="21" styleClass="font-icon" />
+                  <ComboBox fx:id="cmbFacturaMetodoPago" focusTraversable="false" layoutX="1154.0" layoutY="127.0" prefHeight="27.0" prefWidth="250.0" promptText="Selecciona un Método de Pago" />
+                  <Label layoutX="24.0" layoutY="24.0" styleClass="header-texto" text="Información Factura">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbFacturaPaciente" focusTraversable="false" layoutX="450.0" layoutY="123.0" prefHeight="38.0" prefWidth="250.0" promptText="Selecciona un Paciente" />
+                  <ComboBox fx:id="cmbFacturaTratamiento" focusTraversable="false" layoutX="450.0" layoutY="179.0" prefHeight="38.0" prefWidth="250.0" promptText="Selecciona un Tratamiento" />
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+    </children>
+</AnchorPane>
