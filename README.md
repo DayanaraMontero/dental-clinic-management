@@ -26,4 +26,19 @@ Aplicación de escritorio para la gestión de clínicas dentales que permite adm
 - Control de **consultorios** y disponibilidad de salas.
 - Generación de **facturas** por tratamiento con múltiples métodos de pago.
 
+---
+
+## Capturas de pantalla
+
+### Pantalla de Login
+![Login](src/main/resources/img/capturas-app/login.png)
+
+### Pantalla de Registro
+![Login](src/main/resources/img/capturas-app/registro.png)
+
+### Gestión de Pacientes
+![Login](src/main/resources/img/capturas-app/pacientes-vista.png)
+
+---
+
 
