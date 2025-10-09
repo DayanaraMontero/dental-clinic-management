@@ -1,5 +1,18 @@
 # 🏥 Sistema de Gestión de Clínica Dental
 
+## Índice
+
+* [Descripción](#descripción)
+* [Objetivos](#objetivos)
+* [Funcionalidades](#funcionalidades)
+* [Capturas de pantalla](#capturas-de-pantalla)
+* [Stack tecnológico](#stack-tecnológico)
+* [Instalación](#instalación)
+  * [Requisitos](#requisitos)
+  * [Configuración](#configuración)
+* [Estructura del proyecto](#estructura-del-proyecto)
+* [Licencia](#licencia)
+
 ## Descripción
 
 Aplicación de escritorio para la gestión de clínicas dentales que permite administrar pacientes, dentistas, citas, tratamientos y facturación desde una interfaz gráfica desarrollada con **JavaFX**.
@@ -166,4 +179,4 @@ ClinicaDental/
 ## Licencia
 Proyecto desarrollado con fines educativos como parte del ciclo **Desarrollo de Aplicaciones Multiplataforma** en el **CIPFP Cheste, 2025.**
 
-
+####  <u>*[Volver al índice](#índice)*</u>
