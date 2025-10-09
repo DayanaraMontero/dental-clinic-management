@@ -99,4 +99,71 @@ mvn spring-boot:run
 - Esperar a que descargue dependencias
 - Ejecutar clase **Main.java**.
 
+---
+
+## Estructura del proyecto
+```
+ClinicaDental/
+├── .idea/                      # Configuración de IntelliJ IDEA
+├── .mvn/                       # Maven wrapper
+├── javafx-sdk-17.0.14/         # JavaFX SDK
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── es.cheste.ClinicaDental/
+│   │   │       ├── config/              # Configuraciones de Spring
+│   │   │       ├── controladores_cliente/  # Controladores REST
+│   │   │       ├── controladores_fx/    # Controladores JavaFX (Vista)
+│   │   │       ├── entidades/          # Entidades JPA (Modelo)
+│   │   │       │   ├── Cita.java
+│   │   │       │   ├── Consulta.java
+│   │   │       │   ├── Dentista.java
+│   │   │       │   ├── Factura.java
+│   │   │       │   ├── Paciente.java
+│   │   │       │   ├── Tratamiento.java
+│   │   │       │   └── Usuario.java
+│   │   │       ├── enums/              # Enumerados: EstadoCita, Especialidad, Genero, etc.
+│   │   │       ├── excepcion/          # Manejo de excepciones
+│   │   │       ├── interfaces/         # Interfaces DAO (Patrón DAO)
+│   │   │       │   ├── CitaDAO.java
+│   │   │       │   ├── ConsultaDAO.java
+│   │   │       │   ├── DentistaDAO.java
+│   │   │       │   ├── FacturaDAO.java
+│   │   │       │   ├── PacienteDAO.java
+│   │   │       │   ├── TratamientoDAO.java
+│   │   │       │   └── UsuarioDAO.java
+│   │   │       ├── impl/               # Implementaciones DAO
+│   │   │       │   ├── CitaDAOImpl.java
+│   │   │       │   ├── ConsultaDAOImpl.java
+│   │   │       │   ├── DentistaDAOImpl.java
+│   │   │       │   ├── FacturaDAOImpl.java
+│   │   │       │   ├── PacienteDAOImpl.java
+│   │   │       │   ├── TratamientoDAOImpl.java
+│   │   │       │   └── UsuarioDAOImpl.java
+│   │   │       ├── repositorios/       # Repositorios Spring Data JPA
+│   │   │       ├── servicios/          # Lógica de negocio
+│   │   │       └── Main.java           # Clase principal
+│   │   └── resources/
+│   │       ├── css/                    # Hojas de estilo
+│   │       ├── img/                    # Imágenes e iconos
+│   │       ├── static/                 # Recursos estáticos
+│   │       ├── templates/              # Plantillas FXML
+│   │       ├── vista/                  # Vistas adicionales
+│   │       └── application.properties  # Configuración Spring Boot
+│   └── test/                           # Tests unitarios
+├── target/                     # Compilación de Maven
+├── .gitattributes             # Atributos de Git
+├── .gitignore                 # Archivos ignorados por Git
+├── HELP.md                    # Ayuda de Spring Boot
+├── mvnw                       # Maven wrapper (Unix)
+├── mvnw.cmd                   # Maven wrapper (Windows)
+├── pom.xml                    # Configuración de Maven
+└── README.md                  # Este archivo
+```
+
+---
+
+## Licencia
+Proyecto desarrollado con fines educativos como parte del ciclo **Desarrollo de Aplicaciones Multiplataforma** en el **CIPFP Cheste, 2025.**
+
 
