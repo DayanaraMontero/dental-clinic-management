@@ -13,6 +13,8 @@
 * [Estructura del proyecto](#estructura-del-proyecto)
 * [Licencia](#licencia)
 
+---
+
 ## Descripción
 
 Aplicación de escritorio para la gestión de clínicas dentales que permite administrar pacientes, dentistas, citas, tratamientos y facturación desde una interfaz gráfica desarrollada con **JavaFX**.
