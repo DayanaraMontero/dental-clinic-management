@@ -41,4 +41,62 @@ Aplicación de escritorio para la gestión de clínicas dentales que permite adm
 
 ---
 
+## Stack tecnológico
+
+- **Backend:** Java 17, Spring Boot 3.4.3, Hibernate/JPA
+- **Patrón de diseño:** DAO (Data Access Object), MVC (Modelo-Vista-Controlador)
+- **Frontend:** JavaFX, FXML
+- **Base de Datos:** PostgreSQL
+- **Librerías adicionales:** FontAwesome, AnimateFX, Log4j2
+- **Gestión:** Maven
+- **Control de versiones:** Git y GitHub
+
+---
+
+## Instalación
+
+### Requisitos
+
+- Java 17+
+- PostgreSQL 12+
+- Maven 3.6+
+- IDE (recomendado: IntelliJ IDEA o Eclipse)
+
+### Configuración
+
+1. **Clonar el repositorio:**
+```bash
+git clone https://github.com/DayanaraMontero/dental-clinic-management.git
+cd dental-clinic-management
+```
+
+2. **Crear base de datos:**
+```sql
+CREATE DATABASE clinica;
+```
+
+3. **Configurar application.properties:**
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/clinica
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.username=tu_usuario
+spring.datasource.password=tu_contraseña
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
+
+4. **Compilar y ejecutar**
+
+**Opción A - Con Maven:**
+```bash
+mvn clean install
+mvn spring-boot:run
+```
+
+**Opción B - Desde IDE:**
+
+- Importar proyecto como proyecto **Maven**.
+- Esperar a que descargue dependencias
+- Ejecutar clase **Main.java**.
+
 
