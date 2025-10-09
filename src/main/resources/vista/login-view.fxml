@@ -26,6 +26,11 @@
                   <Circle fx:id="btnClose" fill="#ff3300" layoutX="31.0" layoutY="31.0" onMouseClicked="#handleButton" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
                   <Circle fill="#00ff08" layoutX="54.0" layoutY="31.0" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
                   <Circle fill="#ffea00" layoutX="77.0" layoutY="31.0" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+                  <ImageView fitHeight="181.0" fitWidth="216.0" layoutX="80.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/iconos/logo-login.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </left>
@@ -61,6 +66,16 @@
                         <Font name="Times New Roman Bold" size="15.0" />
                      </font>
                   </Button>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="29.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/iconos/logo-email.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="38.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/iconos/contrasenya.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </center>

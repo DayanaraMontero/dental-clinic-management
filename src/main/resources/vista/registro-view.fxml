@@ -46,5 +46,25 @@
             <Image url="@../img/flecha.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="70.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/iconos/nombre.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="65.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/iconos/logo-email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="70.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/iconos/contrasenya.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="72.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/iconos/check.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
