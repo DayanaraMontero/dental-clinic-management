@@ -66,5 +66,10 @@
             <Image url="@../img/iconos/check.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="102.0" layoutY="33.0" onMouseClicked="#volverAIniciarSesion" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/iconos/flecha.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
