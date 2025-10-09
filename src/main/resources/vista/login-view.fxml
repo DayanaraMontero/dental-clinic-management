@@ -26,7 +26,7 @@
                   <Circle fx:id="btnClose" fill="#ff3300" layoutX="31.0" layoutY="31.0" onMouseClicked="#handleButton" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
                   <Circle fill="#00ff08" layoutX="54.0" layoutY="31.0" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
                   <Circle fill="#ffea00" layoutX="77.0" layoutY="31.0" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
-                  <ImageView fitHeight="181.0" fitWidth="216.0" layoutX="80.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="211.0" fitWidth="209.0" layoutX="66.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/iconos/logo-login.png" />
                      </image>
